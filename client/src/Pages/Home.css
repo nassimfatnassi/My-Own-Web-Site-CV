@@ -1,0 +1,16 @@
+.photo{
+    border-radius: 50% !important;
+    margin-left: 38%;
+    margin-right: 35%;
+    padding-top: 4%;
+}
+.nom{
+    font-family: Geneva !important;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.span{ 
+    margin-left: 38%;
+    margin-right: 38%;
+    padding-top: 3%;
+}
