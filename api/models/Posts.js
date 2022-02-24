@@ -4,21 +4,24 @@ const PostSchema = new mongoose.Schema({
     name:{
         type: String,
         required:true,
+        unique:false,
     },
     lastname:{
         type: String,
         required:true,
+        unique:false,
 
     },
     email:{
         type:String,
         required:false,
-        unique:true
+        unique:false,
     },
     number:{
         type:String,
         required:false,
-        unique:true
+        unique:false,
+        
 }},
     {timestamps: true}
 )

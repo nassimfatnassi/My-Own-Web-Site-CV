@@ -21,6 +21,8 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully")
 })
 
+
+
 /* 
 after create our models and routes we require our routes here and use them
 */

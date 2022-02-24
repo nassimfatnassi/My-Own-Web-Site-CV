@@ -27,7 +27,7 @@ export default function CantactMe(){
         <>
         <p className="h2 text-center text-dark mt-5 fst-italic">Cantact me</p>
         <div className='formulaire'>
-        <form action="" name="myForm">
+        <form onSubmit={handleSubmit}>
         <span className='fw-bold'>Name:</span>
         <input
           type="text"
@@ -67,11 +67,10 @@ export default function CantactMe(){
           autoFocus={true}
             onChange={e=>setnumber(e.target.value)}
         />
-        </form>
-        <br></br>
-        <textarea rows="3" cols="20">description</textarea>
-        </div>
         <button class="btn btn-primary button ps-4 pe-4 pt-2 pb-2">Submit!</button>
+        </form>
+        </div>
+        
         
         </>
     )

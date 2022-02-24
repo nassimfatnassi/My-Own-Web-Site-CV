@@ -16,9 +16,11 @@ router.route('/add').post((req, res) => {
       email,
       number
     });
-  
+
+  console.log("newPost ",newPost);
+
     newPost.save().then(() => res.json('Post added!'))
-    .catch(err => res.status(400).json('Error: ' + err));
+    .catch(err => console.log(err));
   });
 
   module.exports = router;
