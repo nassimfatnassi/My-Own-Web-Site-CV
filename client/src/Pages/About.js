@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import'./About.css';
-export default function About(){
+export default function About({active}){
     return(
         <>
         <p className="h2 text-center pt-3 fst-italic">About me</p>

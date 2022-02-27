@@ -37,7 +37,7 @@ export default function CantactMe(){
           autoFocus={true}
             onChange={e=>setname(e.target.value)}
           />
-           <br></br><br></br>
+           
         <span className='fw-bold'>Last Name:</span>
           <input
           type="text"
@@ -47,7 +47,6 @@ export default function CantactMe(){
           autoFocus={true}
             onChange={e=>setlastname(e.target.value)}
         />
-        <br></br><br></br>
         <span className='fw-bold'>Email:</span>
         <input
           type="email"
@@ -57,7 +56,7 @@ export default function CantactMe(){
           autoFocus={true}
             onChange={e=>setemail(e.target.value)}
         />
-        <br></br><br></br>
+
         <span className='fw-bold'>Number:</span>
         <input
           type="text"

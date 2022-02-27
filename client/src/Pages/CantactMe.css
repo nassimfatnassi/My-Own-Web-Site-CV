@@ -1,16 +1,24 @@
-.inputBox{border-radius: 20%;}
 .formulaire{
-    background-color: darksalmon;
+    background-color: rgb(126, 173, 184);
     border-radius: 15%;
-    opacity: 0.8;
+    opacity: 0.5;
     width: 30%;
     padding: 20px;
     text-align: center;
     margin-left: 35%;
     margin-right: 35%;
+  
 }
 .button{
-    margin-top: 1%;
-    margin-left: 47%;
-    margin-right: 50%;
+    margin-top: 3%;
+    
+}
+span{
+display: flex;
+}
+
+.inputBox{
+    display: flex;
+    width: 90%;
+    margin : 0 !important
 }

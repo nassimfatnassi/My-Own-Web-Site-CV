@@ -1,7 +1,9 @@
 import {Link} from "react-router-dom";
 import './Navbar.css';
-
+import { useState } from "react";
 export default function NavBar(){
+const [active, setActive] = useState("/");
+
     return(
         <>
         <nav className="navbar navbar-expand-lg navbar-primary Mynav  ">
@@ -10,25 +12,43 @@ export default function NavBar(){
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <Link to="/" className="navbar-brand links" >Home</Link>
+   {active == "/" ? 
+   <Link to="/" className="navbar-brand links home activated" onClick={()=>setActive("/")} >Home</Link> :
+   <Link to="/" className="navbar-brand links home" onClick={()=>setActive("/")} >Home</Link>
+  }
+
+        
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-               <Link className="nav-link active links" to="/Project" > Project </Link>
-              </li>
+              {active == "/Project" ? 
+              <Link to="/Project" className="nav-link active links activated" onClick={()=>setActive("/Project")} >Project</Link> :
+              <Link to="/Project" className="nav-link active links home" onClick={()=>setActive("/Project")} >Project</Link>
+             }
+                         </li>
              
               <li className="nav-item">
-               <Link className="nav-link active links" to="/About" > About </Link>
-              </li>
+         
+              {active == "/About" ? 
+              <Link to="/About" className="nav-link active links activated" onClick={()=>setActive("/About")} >About</Link> :
+              <Link to="/About" className="nav-link active links " onClick={()=>setActive("/About")} >About</Link>
+             }              </li>
               <li className="nav-item">
-              <Link className="nav-link active links" to="/Certification" > Certification </Link>
+              {active == "/Certification" ? 
+              <Link to="/Certification" className="nav-link active links activated" onClick={()=>setActive("/Certification")} >Certification</Link> :
+              <Link to="/Certification" className="nav-link active links " onClick={()=>setActive("/Certification")} >Certification</Link>
+             }      
              </li>
              <li className="nav-item">
-              <Link className="nav-link active links" to="/CantactMe" > Cantact me </Link>
+             {active == "/CantactMe" ? 
+             <Link to="/CantactMe" className="nav-link active links activated" onClick={()=>setActive("/CantactMe")} >CantactMe</Link> :
+             <Link to="/CantactMe" className="nav-link active links " onClick={()=>setActive("/CantactMe")} >CantactMe</Link>
+            }       
              </li>
             </ul>
           </div>
         </div>
       </nav>
+      {console.log(active)}
         </>
         
     )

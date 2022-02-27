@@ -13,14 +13,15 @@ import NavBar from './NavBar/NavBar';
 
 
 function App() {
+
   return (
   <Router>
     <NavBar />
   <Routes>
-    <Route exact path="/" element={<Home />} />
-    <Route exact path="/About" element={<About />} />
-    <Route exact path="/CantactMe" element={<CantactMe />} />
-    <Route exact path="/Certification" element={<Certification />} />
+    <Route exact path="/" element={<Home  />} />
+    <Route exact path="/About" element={<About  />} />
+    <Route exact path="/CantactMe" element={<CantactMe  />} />
+    <Route exact path="/Certification" element={<Certification  />} />
   </Routes>
   </Router>
   );
